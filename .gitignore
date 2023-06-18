@@ -18,12 +18,18 @@
 # misc
 .DS_Store
 *.pem
+.env.local
+.env.build
+.env.production.local
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Next.js
+/.next/
+/out/
 # local env files
 .env*.local
 
