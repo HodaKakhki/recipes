@@ -2,6 +2,7 @@
 
 import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider } from "@chakra-ui/react";
+import { Navbar } from "./components/Navbar/Navbar";
 import { theme } from "./theme";
 
 export default function RootLayout({
@@ -13,17 +14,20 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>respies</title>
-        <meta title="description" content="new respie"></meta>
+        <meta title="description" content="give up"></meta>
         <link
           rel="icon"
           type="image/png"
-          sizes="32*32"
+          sizes="20*20"
           href="images/paper.png"
-        />
+        ></link>
       </head>
       <body suppressHydrationWarning={true}>
         <CacheProvider>
-          <ChakraProvider theme={theme}>{children}</ChakraProvider>
+          <ChakraProvider theme={theme}>
+            <Navbar />
+            {children}
+          </ChakraProvider>
         </CacheProvider>
       </body>
     </html>
