@@ -12,14 +12,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>resipies</title>
-        <meta title="description" content="give up"></meta>
+        <title>respies</title>
+        <meta title="description" content="new respie"></meta>
         <link
           rel="icon"
           type="image/png"
-          sizes="20*20"
+          sizes="32*32"
           href="images/paper.png"
-        ></link>
+        />
       </head>
       <body suppressHydrationWarning={true}>
         <CacheProvider>
