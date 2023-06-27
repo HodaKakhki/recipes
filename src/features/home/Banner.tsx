@@ -87,14 +87,11 @@ export const Banner = () => {
         <Box
           w={{
             base: "400px",
-            lg: "600px",
+            lg: "700px",
             sm: "760px",
+        
           }}
-          h={{
-            base: "300px",
-            lg: "500px",
-            sm: "400px",
-          }}
+          h={{ base: "300px", lg: "500px", sm: "400px" }}
           bg="center / cover no-repeat url(../images/baked.jpg)"
         ></Box>
       </Box>
