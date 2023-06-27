@@ -4,7 +4,6 @@ export const navbarStyles: BoxProps = {
   pos: "fixed",
   w: "100%",
   bgColor: "white",
-  mb: "1rem",
   zIndex: "10",
 };
 export const desktopNavStyles: FlexProps = {

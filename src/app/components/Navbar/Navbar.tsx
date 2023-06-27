@@ -6,9 +6,11 @@ import { navbarStyles } from "./style";
 
 export const Navbar = () => {
   return (
-    <Box {...navbarStyles}>
-      <DesktopNav />
-      <MobileNav/>
+    <Box h={"140px"}>
+      <Box {...navbarStyles}>
+        <DesktopNav />
+        <MobileNav />
+      </Box>
     </Box>
   );
 };
