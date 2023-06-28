@@ -11,7 +11,6 @@ import {
 export const bannertStyles: FlexProps = {
   flexDir: { base: "column", lg: "row" },
   w: { base: "100%", lg: "90%" },
-
   borderRadius: "2rem",
   overflow: "hidden",
   mx: "auto",
@@ -95,6 +94,6 @@ export const bannerImageBoxStyles: BoxProps = {
     lg: "700px",
     sm: "760px",
   },
-  h: { base: "300px", lg: "500px", sm: "400px" },
+  h: { base: "300px", lg: "600px", sm: "400px" },
   bg: "center / cover no-repeat url(../images/baked.jpg)",
 };
