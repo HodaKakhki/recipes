@@ -20,15 +20,14 @@ export const bannertStyles: FlexProps = {
 export const buttonTopStyles: ButtonProps = {
   rounded: "full",
   bg: "white",
-  py: "1rem",
+  py: "1.5rem",
   px: "1.5rem",
+  mb: "2rem",
   _hover: {
     bg: "gray.100",
   },
 };
 export const ImageTopStyles: ImageProps = {
-  width: "24px",
-  height: "24px",
   marginRight: "12px",
 };
 export const bannerHeadingStyles: HeadingProps = {

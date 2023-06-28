@@ -29,7 +29,7 @@ export const TopCategories = () => {
         templateColumns={{
           base: "repeat(2,1rf)",
           md: "repeat(4,1rf)",
-          lg: "repeat(6, 1fr)",
+          xl: "repeat(6, 1fr)",
         }}
       >
         <GridItem>
@@ -70,6 +70,7 @@ const TopCategoryCard = () => {
       border={"2px solid pink"}
       w={180}
       h={220}
+      _hover={{ cursor: "pointer", bgColor: "gray.100" }}
     >
       <CardBody>
         <Image src="/images/product1.png" alt="" h="100" w="100" />
