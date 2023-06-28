@@ -1,4 +1,5 @@
 import {
+  BoxProps,
   ButtonProps,
   FlexProps,
   HeadingProps,
@@ -88,4 +89,13 @@ export const badgeBannerStyles: ImageProps = {
 };
 export const avatarBannerStyles: StackProps = {
   flexDirection: { base: "row", lg: "row" },
+};
+export const bannerImageBoxStyles: BoxProps = {
+  w: {
+    base: "400px",
+    lg: "700px",
+    sm: "760px",
+  },
+  h: { base: "300px", lg: "500px", sm: "400px" },
+  bg: "center / cover no-repeat url(../images/baked.jpg)",
 };
