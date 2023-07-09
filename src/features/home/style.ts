@@ -80,7 +80,7 @@ export const recipeButtonStyles: ButtonProps = {
 };
 export const badgeBannerStyles: ImageProps = {
   position: "absolute",
-  top: "10rem",
+  top: "4rem",
   m: "0 auto",
   right: "0",
   left: "0",
@@ -96,4 +96,9 @@ export const bannerImageBoxStyles: BoxProps = {
   },
   h: { base: "300px", lg: "600px", sm: "400px" },
   bg: "center / cover no-repeat url(../images/baked.jpg)",
+};
+export const radialBackgroundStyles: BoxProps = {
+  borderRadius: "16",
+  overflow: "hidden",
+  bgGradient: "linear(to-b, #fff, brand.primaryLight)",
 };

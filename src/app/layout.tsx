@@ -1,5 +1,5 @@
 "use client";
-
+import "swiper/swiper.min.css";
 import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "./theme";
