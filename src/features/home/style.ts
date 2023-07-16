@@ -8,7 +8,7 @@ import {
   TextProps,
 } from "@chakra-ui/react";
 
-export const bannertStyles: FlexProps = {
+export const bannerStyles: FlexProps = {
   flexDir: { base: "column", lg: "row" },
   w: { base: "100%", lg: "90%" },
   borderRadius: "2rem",
@@ -31,7 +31,7 @@ export const ImageTopStyles: ImageProps = {
 };
 export const bannerHeadingStyles: HeadingProps = {
   size: { base: "xl", lg: "3xl" },
-  lineHeight: "4rem",
+  // lineHeight: "4rem",
   color: "black",
   mb: "24px",
 };
@@ -101,4 +101,43 @@ export const radialBackgroundStyles: BoxProps = {
   borderRadius: "16",
   overflow: "hidden",
   bgGradient: "linear(to-b, #fff, brand.primaryLight)",
+};
+
+export const moreHeadingStyles: HeadingProps = {
+  // size: { base: "xl", lg: "3xl" },
+  lineHeight: "3rem",
+  color: "black",
+  mb: "24px",
+};
+export const moreTextStyles: TextProps = {
+  fontSize: { base: "md", lg: "lg" },
+  py: "1rem",
+  maxW: "600px",
+  mb: "72px",
+};
+export const moreButtonStyles: ButtonProps = {
+  borderRadius: "1rem",
+  bg: "black",
+  color: "white",
+  px: "4rem",
+  py: "2rem",
+};
+export const moreStyles: FlexProps = {
+  flexDir: { base: "column", lg: "row" },
+  w: { base: "100%", lg: "90%" },
+  borderRadius: "2rem",
+  overflow: "hidden",
+  mx: "auto",
+  alignItems: "center",
+  mb: "240px",
+};
+
+export const moreImageBoxStyles: BoxProps = {
+  w: {
+    base: "400px",
+    lg: "700px",
+    sm: "760px",
+  },
+  h: { base: "300px", lg: "600px", sm: "400px" },
+  bg: "center / cover no-repeat url(../images/chef.jpg)",
 };

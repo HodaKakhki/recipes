@@ -1,3 +1,4 @@
+"use client";
 import React, { CSSProperties } from "react";
 import { SwiperOptions, Navigation, Autoplay } from "swiper";
 import { Banner } from "./Banner";

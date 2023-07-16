@@ -15,6 +15,7 @@ export const FeaturedProducts = () => {
       flexWrap="wrap"
       justifyContent="center"
       gap="8"
+      mb='9rem'
     >
       {[...Array(9)].map((_, index) => (
         <Grid key={index}>

@@ -22,11 +22,12 @@ export const TopCategoryCard = () => {
         ColorItems.map((ColorItem) => (
           <Card
             key={ColorItem.label}
+            minWidth={{ base: "100%", md: "20%", lg: "14%" }}
             bgGradient={ColorItem.bgGradient}
-            borderRadius={30}
-            mx="1rem"
             overflow={"hidden"}
-            minWidth={{ base: "100%", md: "30%", lg: "14%" }}
+            borderRadius={30}
+            borderColor="transparent"
+            m="1rem"
           >
             <CardBody borderRadius={30} overflow={"hidden"}>
               <Image src={ColorItem.image} alt="" margin="0 auto" />

@@ -1,9 +1,9 @@
 "use clinet";
+import React from "react";
 import { ButtonComponent } from "@/app/components/ButtonComponent";
 import { SectionHeading } from "@/app/components/SectionHeading";
 import { TopCategoryCard } from "../home/TopCategoryCard";
 import { Box, Grid, GridItem } from "@chakra-ui/react";
-import React from "react";
 
 export const TopCategories = () => {
   return (

@@ -18,7 +18,7 @@ import {
   badgeBannerStyles,
   bannerHeadingStyles,
   bannerTextStyles,
-  bannertStyles,
+  bannerStyles,
   buttonHourStyles,
   buttonToolsStyles,
   buttonsBannerStyles,
@@ -29,7 +29,7 @@ import {
 
 export const Banner = () => {
   return (
-    <Flex {...bannertStyles}>
+    <Flex {...bannerStyles}>
       <Box
         w={{ base: "100%", lg: "50%" }}
         p={"2rem"}
@@ -44,22 +44,24 @@ export const Banner = () => {
           />
           <Text> Hot Recipes</Text>
         </Button>
-        <Heading {...bannerHeadingStyles}>
-          Spicy delicious
-          <br /> chicken wings
-        </Heading>
-        <Text {...bannerTextStyles}>
-          Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqut enim ad minim
-        </Text>
+        <Box>
+          <Heading {...bannerHeadingStyles}>
+            Spicy delicious
+            <br /> chicken wings
+          </Heading>
+          <Text {...bannerTextStyles}>
+            Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqut enim ad minim
+          </Text>
+        </Box>
         <Stack {...buttonsBannerStyles}>
           <Button {...buttonHourStyles}>
             <Image alt="paper" src="/images/Timer.png" sizes="24*24" />
-            <Text ml={"4"}> 30 Minutes</Text>
+            <Text ml={"4"}>30 Minutes</Text>
           </Button>
           <Button {...buttonToolsStyles}>
             <Image alt="paper" src="/images/ForkKnife.png" sizes="24*24" />
-            <Text ml={"4"}> Chicken</Text>
+            <Text ml={"4"}>Chicken</Text>
           </Button>
         </Stack>
         <Flex {...footerBannerStyles}>
