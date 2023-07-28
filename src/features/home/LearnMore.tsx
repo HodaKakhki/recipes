@@ -5,9 +5,9 @@ import {
   moreImageBoxStyles,
   moreHeadingStyles,
   moreTextStyles,
-  moreButtonStyles,
   moreStyles,
 } from "./style";
+import { ButtonOrigin } from "@/helpers/ButtonOrigin";
 
 export const LearnMore = () => {
   return (
@@ -27,9 +27,7 @@ export const LearnMore = () => {
         </Box>
 
         <Flex>
-          <Button {...moreButtonStyles}>
-            <Text>Learn More</Text>
-          </Button>
+          <ButtonOrigin title="Learn More" />
         </Flex>
       </Box>
 

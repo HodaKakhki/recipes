@@ -1,7 +1,7 @@
 import { Box, Divider, Flex, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { AppLogo } from "../AppLogo";
-import { footerItems } from "@/helpers";
+import { footerItems } from "@/helpers/helpers";
 import Link from "next/link";
 import {
   desktopFooterStyles,

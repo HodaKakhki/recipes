@@ -23,9 +23,10 @@ import {
   buttonToolsStyles,
   buttonsBannerStyles,
   footerBannerStyles,
-  recipeButtonStyles,
   bannerImageBoxStyles,
 } from "./style";
+import { ButtonIcon } from "@/helpers/ButtonIcon";
+import CirclePlay from "../../../public/images/svg/CirclePlay";
 
 export const Banner = () => {
   return (
@@ -74,11 +75,7 @@ export const Banner = () => {
               </Text>
             </Stack>
           </Stack>
-
-          <Button {...recipeButtonStyles}>
-            <Text mr={"4"}> View Recipes</Text>
-            <Image alt="paper" src="/images/PlayCircle.png" sizes="24*24" />
-          </Button>
+          <ButtonIcon title="View Recipes" Icon={<CirclePlay />} bgColor="" color={"white"} />
         </Flex>
       </Box>
       <Box>

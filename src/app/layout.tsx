@@ -4,7 +4,10 @@ import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "./theme";
 import { Navbar } from "./components/Navbar/Navbar";
-
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import Footer from "./components/Footer/Footer";
+config.autoAddCss = false;
 export default function RootLayout({
   children,
 }: {
@@ -27,7 +30,7 @@ export default function RootLayout({
           <ChakraProvider theme={theme}>
             <Navbar />
             {children}
-            {/* <Footer /> */}
+            <Footer />
           </ChakraProvider>
         </CacheProvider>
       </body>

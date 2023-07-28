@@ -5,7 +5,7 @@ import { AppLogo } from "../AppLogo";
 
 import { desktopNavStyles, logoSectionStyles, navitemsStyles } from "./style";
 import { Social } from "../Social";
-import { navItems } from "@/helpers";
+import { navItems } from "@/helpers/helpers";
 
 export const DesktopNav = () => {
   return (

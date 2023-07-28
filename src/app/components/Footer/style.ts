@@ -1,7 +1,6 @@
 import { BoxProps, FlexProps, StackProps, TextProps } from "@chakra-ui/react";
 
 export const footerStyles: BoxProps = {
-  pos: "fixed",
   w: "100%",
   bgColor: "white",
   zIndex: "10",

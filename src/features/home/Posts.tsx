@@ -1,5 +1,5 @@
 "use client";
-import Post from "@/app/components/Post";
+import Post from "@/app/components/Post/Post";
 import { Box } from "@chakra-ui/react";
 import React from "react";
 

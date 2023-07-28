@@ -2,10 +2,9 @@ import React from "react";
 import { Link } from "@chakra-ui/next-js";
 import { Flex, Stack } from "@chakra-ui/react";
 import { iconsSocialStyles, networksStyles } from "./Navbar/style";
-import Image from "next/image";
-import facebookIcon from "./../../../public/images/facebook-icon.svg";
-import twitterIcon from "./../../../public/images/twitter-icon.svg";
-import instagramIcon from "./../../../public/images/instagram-icon.svg";
+import Facebook from "../../../public/images/svg/Facebook";
+import Twitter from "../../../public/images/svg/Twitter";
+import Instagram from "../../../public/images/svg/Instagram";
 
 export const Social = () => {
   return (
@@ -13,13 +12,13 @@ export const Social = () => {
       <Stack {...networksStyles}>
         <Flex {...iconsSocialStyles}>
           <Link href="/">
-            <Image priority src={facebookIcon} alt="Follow us on Facebook" />
+            <Facebook />
           </Link>
           <Link href="/">
-            <Image priority src={twitterIcon} alt="Follow us on Twitter" />
+            <Twitter />
           </Link>
           <Link href="/">
-            <Image priority src={instagramIcon} alt="Follow us on Instagram" />
+            <Instagram />
           </Link>
         </Flex>
       </Stack>

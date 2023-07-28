@@ -1,4 +1,4 @@
-import { ColorItem, FooterItem, NavItem } from "./model";
+import { ColorItem, FooterItem, NavItem } from "../model";
 
 export const navItems: NavItem[] = [
   {

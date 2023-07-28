@@ -1,4 +1,4 @@
-import { ColorItems } from "../../helpers";
+import { ColorItems } from "../../helpers/helpers";
 import { Box, Card, CardBody, Heading, Image } from "@chakra-ui/react";
 const customStyles = {
   "& > :first-child": {

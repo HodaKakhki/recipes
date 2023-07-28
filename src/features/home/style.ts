@@ -102,7 +102,6 @@ export const radialBackgroundStyles: BoxProps = {
   overflow: "hidden",
   bgGradient: "linear(to-b, #fff, brand.primaryLight)",
 };
-
 export const moreHeadingStyles: HeadingProps = {
   // size: { base: "xl", lg: "3xl" },
   lineHeight: "3rem",
@@ -131,7 +130,6 @@ export const moreStyles: FlexProps = {
   alignItems: "center",
   mb: "240px",
 };
-
 export const moreImageBoxStyles: BoxProps = {
   w: {
     base: "400px",
@@ -140,4 +138,14 @@ export const moreImageBoxStyles: BoxProps = {
   },
   h: { base: "300px", lg: "600px", sm: "400px" },
   bg: "center / cover no-repeat url(../images/chef.jpg)",
+};
+export const backgroundSubscribeStyle: BoxProps = {
+  h: "442px",
+  w: { base: "100%", lg: "100%", sm: "760px" },
+  flexDir: "column",
+  bg: "center / contain no-repeat url(/images/subscribe.png)",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  borderRadius: "60px",
 };

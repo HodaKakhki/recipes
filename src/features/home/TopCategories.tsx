@@ -14,7 +14,11 @@ export const TopCategories = () => {
         alignItems={"center"}
       >
         <SectionHeading title={"Categories"} />
-        <ButtonComponent btnName={"View All Categories"} />
+        <ButtonComponent
+          btnName={"View All Categories"}
+          bgColor="brand.primaryLight"
+          color="black"
+        />
       </Box>
       <Grid>
         <GridItem>

@@ -1,6 +1,6 @@
 "use client";
 import { ProductCard } from "@/app/components/ProductCard";
-import { Grid } from "@chakra-ui/react";
+import { Grid, Image } from "@chakra-ui/react";
 import React, { CSSProperties } from "react";
 
 const productCardStyles: CSSProperties = {
@@ -15,14 +15,16 @@ export const FeaturedProducts = () => {
       flexWrap="wrap"
       justifyContent="center"
       gap="8"
-      mb='9rem'
+      mb="9rem"
     >
       {[...Array(9)].map((_, index) => (
-        <Grid key={index}>
-          <div style={productCardStyles}>
+        <div style={productCardStyles} key={index}>
+          {index === 5 ? (
+            <Image src="/images/Ads.png" alt="ads" />
+          ) : (
             <ProductCard />
-          </div>
-        </Grid>
+          )}
+        </div>
       ))}
     </Grid>
   );

@@ -6,7 +6,9 @@ import { Box } from "@chakra-ui/react";
 import { SectionText } from "@/app/components/SectionText";
 import { LearnMore } from "@/features/home/LearnMore";
 import Posts from "@/features/home/Posts";
-
+import { ButtonIcon } from "@/helpers/ButtonIcon";
+import { SubscribeCard } from "@/features/home/SubscribeCard";
+import Instagram from "../../public/images/svg/Instagram";
 export default function Home() {
   return (
     <Box>
@@ -20,13 +22,26 @@ export default function Home() {
       />
       <FeaturedProducts />
       <LearnMore />
-      <SectionText
-        title={"Check out @foodieland on Instagram"}
-        paragraph={
-          "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim "
-        }
-      />
-      <Posts />
+      <Box bgGradient="linear(to-b, #fff, brand.primaryLight)" mb="160px">
+        <SectionText
+          title={"Check out @foodieland on Instagram"}
+          paragraph={
+            "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim "
+          }
+        />
+        <Posts />
+        <Box
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          pb="5rem"
+        >
+          <ButtonIcon
+            title="Visit Our Instagram"
+            Icon={<Instagram />} color='white' bgColor=""/>
+        </Box>
+      </Box>
+      <SubscribeCard />
     </Box>
   );
 }
