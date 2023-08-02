@@ -12,16 +12,20 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
+interface CategoriesItem{
+  label: string;
+  image: string;
 
-export const CategoryCard = () => {
+}
+interface CategoriesCardProps{
+  CategoriesItem: CategoriesItem;
+}
+export const CategoryCard:React.FC<CategoriesCardProps> = ({CategoriesItem}) => {
   return (
-  //     {
-  //   ColorItems &&
-  //   ColorItems.map((ColorItem) => ())
-  // }
+
     <Box w="290px">
       <Image
-        // src="/images/categoryCard.jpg"
+         src={CategoriesItem.image}
         alt="productcard"
         borderRadius="20"
         boxShadow={"md"}
@@ -29,8 +33,7 @@ export const CategoryCard = () => {
       />
       <Stack>
         <Heading fontSize="18px" mb="1.5rem" lineHeight="6">
-          Mixed Tropical Fruit Salad with <br />
-          Superfood Boosts
+         {CategoriesItem.label}
         </Heading>
         <Stack flexDirection={{ base: "row", lg: "row" }}>
           <Button
