@@ -9,6 +9,7 @@ import Posts from "@/features/home/Posts";
 import { ButtonIcon } from "@/helpers/ButtonIcon";
 import { SubscribeCard } from "@/features/home/SubscribeCard";
 import Instagram from "../../public/images/svg/Instagram";
+import { Categories } from "@/features/home/Categories";
 export default function Home() {
   return (
     <Box>
@@ -38,9 +39,13 @@ export default function Home() {
         >
           <ButtonIcon
             title="Visit Our Instagram"
-            Icon={<Instagram />} color='white' bgColor=""/>
+            Icon={<Instagram />}
+            color="white"
+            bgColor=""
+          />
         </Box>
       </Box>
+      <Categories />
       <SubscribeCard />
     </Box>
   );

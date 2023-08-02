@@ -1,32 +1,36 @@
-import { Button, Card, CardBody, Heading, Stack,Image, Text } from "@chakra-ui/react";
-interface ProductItem {
-  image: string;
-  name: string;
-  // Add other properties as needed
-}
+import {
+  Box,
+  Button,
+  ButtonGroup,
+  Card,
+  CardBody,
+  CardFooter,
+  Divider,
+  Heading,
+  Image,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
+import React from "react";
 
-interface ProductCardProps {
-  productItem: ProductItem;
-}
-export const ProductCard: React.FC<ProductCardProps> = ({ productItem }) => (
-  <Card
-    position={"relative"}
-    borderRadius={30}
-    bgGradient="linear(to-b, #fff, brand.primaryLight)"
-  >
-    <CardBody>
+export const CategoryCard = () => {
+  return (
+  //     {
+  //   ColorItems &&
+  //   ColorItems.map((ColorItem) => ())
+  // }
+    <Box w="290px">
       <Image
-        src={productItem.image}
+        // src="/images/categoryCard.jpg"
         alt="productcard"
-        borderRadius="16"
+        borderRadius="20"
         boxShadow={"md"}
-        w={"368px"}
-        mb={"1.5rem"}
+        mb={"1rem"}
       />
       <Stack>
-        <Heading size="24" fontSize="24px">
-          {productItem.name.substring(0, 24)} <br />
-          {productItem.name.substring(24)} <br />
+        <Heading fontSize="18px" mb="1.5rem" lineHeight="6">
+          Mixed Tropical Fruit Salad with <br />
+          Superfood Boosts
         </Heading>
         <Stack flexDirection={{ base: "row", lg: "row" }}>
           <Button
@@ -34,7 +38,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ productItem }) => (
             _hover={{ bg: "none" }}
             _active={{ bg: "none" }}
             bg={"none"}
-            p="0"
+            pr="24px"
           >
             <Image alt="paper" src="/images/Timer.png" />
             <Text ml={"2"} color={"gray.500"}>
@@ -55,7 +59,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({ productItem }) => (
           </Button>
         </Stack>
       </Stack>
-    </CardBody>
-  </Card>
-);
-
+    </Box>
+  );
+};
