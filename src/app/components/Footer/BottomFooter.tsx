@@ -5,10 +5,9 @@ import { copyFooterStyles } from "./style";
 
 export const BottomFooter = () => {
   return (
-    <Flex {...copyFooterStyles}>    
-        <Text>© 2020 Flowbase. Powered by Webflow</Text>
-        <Social />
-     
+    <Flex {...copyFooterStyles}>
+      <Text>© 2020 Flowbase. Powered by Webflow</Text>
+      <Social />
     </Flex>
   );
 };

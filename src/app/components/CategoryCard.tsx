@@ -29,7 +29,7 @@ export const CategoryCard:React.FC<CategoriesCardProps> = ({CategoriesItem}) => 
         alt="productcard"
         borderRadius="20"
         boxShadow={"md"}
-        mb={"1rem"}
+         mb={"1rem"}
       />
       <Stack>
         <Heading fontSize="18px" mb="1.5rem" lineHeight="6">
