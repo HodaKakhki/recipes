@@ -41,7 +41,6 @@ export default function Home() {
             title="Visit Our Instagram"
             Icon={<Instagram />}
             color="white"
-            bgColor=""
           />
         </Box>
       </Box>

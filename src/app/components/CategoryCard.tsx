@@ -1,11 +1,6 @@
 import {
   Box,
   Button,
-  ButtonGroup,
-  Card,
-  CardBody,
-  CardFooter,
-  Divider,
   Heading,
   Image,
   Stack,

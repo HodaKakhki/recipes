@@ -1,12 +1,14 @@
 import React from "react";
 import { SectionText } from "@/app/components/SectionText";
-import { Box } from "@chakra-ui/react";
+import { Box, useBreakpointValue } from "@chakra-ui/react";
 import { backgroundSubscribeStyle } from "./style";
 import { SubscribeBar } from "./SubscribeBar";
 
 export const SubscribeCard = () => {
+  const boxMarginBottom = useBreakpointValue({ base: "80px", md: "160px" });
+
   return (
-    <Box mb="160px">
+    <Box mb={boxMarginBottom}>
       <Box {...backgroundSubscribeStyle} >
         <SectionText
           title="Deliciousness to your inbox"

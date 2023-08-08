@@ -2,9 +2,9 @@ import { Box } from "@chakra-ui/react";
 
 export default function CirclePlay() {
   return (
-    <Box >
+    <Box>
       <svg
-        fill="color"
+        fill="white"
         xmlns="http://www.w3.org/2000/svg"
         height="1.3rem"
         viewBox="0 0 512 512"

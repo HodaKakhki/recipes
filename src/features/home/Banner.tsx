@@ -1,4 +1,5 @@
-"use client";
+// React & Chakra Imports
+import React from "react";
 import {
   Box,
   Button,
@@ -10,7 +11,8 @@ import {
   Avatar,
   Hide,
 } from "@chakra-ui/react";
-import React from "react";
+
+// Local Imports
 import {
   buttonTopStyles,
   ImageTopStyles,
@@ -39,7 +41,7 @@ export const Banner = () => {
         <Button {...buttonTopStyles}>
           <Image
             {...ImageTopStyles}
-            alt="paper"
+            alt="hot recipes icon"
             src="/images/paper.png"
             sizes="24*24"
           />
@@ -57,11 +59,11 @@ export const Banner = () => {
         </Box>
         <Stack {...buttonsBannerStyles}>
           <Button {...buttonHourStyles}>
-            <Image alt="paper" src="/images/Timer.png" sizes="24*24" />
+            <Image alt="timer icon" src="/images/Timer.png" sizes="24*24" />
             <Text ml={"4"}>30 Minutes</Text>
           </Button>
           <Button {...buttonToolsStyles}>
-            <Image alt="paper" src="/images/ForkKnife.png" sizes="24*24" />
+            <Image alt="tools icon" src="/images/ForkKnife.png" sizes="24*24" />
             <Text ml={"4"}>Chicken</Text>
           </Button>
         </Stack>
@@ -75,7 +77,11 @@ export const Banner = () => {
               </Text>
             </Stack>
           </Stack>
-          <ButtonIcon title="View Recipes" Icon={<CirclePlay />} bgColor="" color={"white"} />
+          <ButtonIcon
+            title="View Recipes"
+            Icon={<CirclePlay />}
+            color={"white"}
+          />
         </Flex>
       </Box>
       <Box>

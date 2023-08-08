@@ -1,6 +1,7 @@
+import { Box, Heading, Image } from "@chakra-ui/react";
 import { ColorItems } from "../../helpers/helpers";
-import { Box, Card, CardBody, Heading, Image } from "@chakra-ui/react";
-const customStyles = {
+
+const containerStyles = {
   "& > :first-child": {
     marginRight: 0,
   },
@@ -8,38 +9,44 @@ const customStyles = {
     marginLeft: 0,
   },
 };
+
 export const TopCategoryCard = () => {
   return (
     <Box
-      flexDirection={"row-reverse"}
+      flexDirection={{ base: "column", md: "row-reverse" }}
       display="flex"
       flexWrap="wrap"
       justifyContent="space-between"
-      mx="0 auto"
-      css={customStyles}
+      mx="auto"
+      css={containerStyles}
     >
       {ColorItems &&
-        ColorItems.map((ColorItem) => (
-          <Card
-            key={ColorItem.label}
-            minWidth={{ base: "100%", md: "20%", lg: "14%" }}
-            bgGradient={ColorItem.bgGradient}
-            overflow={"hidden"}
-            borderRadius={30}
+        ColorItems.map((colorItem) => (
+          <Box
+            key={colorItem.label}
+            width={{ base: "100%", sm: "48%", md: "20%", lg: "14%" }}
+            bgGradient={colorItem.bgGradient}
+            overflow="hidden"
+            borderRadius="30px"
             borderColor="transparent"
-            m="1rem"
+            m={{ base: "0.5rem 0", md: "1rem" }}
           >
-            <CardBody borderRadius={30} overflow={"hidden"}>
-              <Image src={ColorItem.image} alt="" margin="0 auto" />
-              <Heading
-                size={{ base: "sm", lg: "sm" }}
-                textAlign={"center"}
-                my={"1.75rem"}
-              >
-                {ColorItem.label}
+            <Box
+              borderRadius="30px"
+              overflow="hidden"
+              p={{ base: "1rem", md: "1.5rem" }}
+            >
+              <Image
+                src={colorItem.image}
+                alt={colorItem.label || "Color Category"}
+                margin="0 auto"
+                maxW="100%"
+              />
+              <Heading size="sm" textAlign="center" my="1.75rem">
+                {colorItem.label}
               </Heading>
-            </CardBody>
-          </Card>
+            </Box>
+          </Box>
         ))}
     </Box>
   );

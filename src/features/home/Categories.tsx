@@ -1,10 +1,8 @@
-import { Grid } from "@chakra-ui/react";
-import React, { CSSProperties } from "react";
+import { Grid, Box } from "@chakra-ui/react";
+import React from "react";
 import { CategoryCard } from "../../app/components/CategoryCard";
 import { categoriesItems } from "@/helpers/helpers";
-const productCardStyles: CSSProperties = {
-  boxSizing: "border-box",
-};
+
 export const Categories = () => {
   return (
     <Grid
@@ -12,13 +10,14 @@ export const Categories = () => {
       display="flex"
       flexWrap="wrap"
       justifyContent="center"
-      gap="8"
+      gap={8}
       mb="9rem"
+      boxSizing="border-box"
     >
-      {categoriesItems.map((CategoriesItem, index) => (
-        <div key={index} style={productCardStyles}>
-          <CategoryCard CategoriesItem={CategoriesItem} />
-        </div>
+      {categoriesItems.map((categoryItem, index) => (
+        <Box key={index}>
+          <CategoryCard CategoriesItem={categoryItem} />
+        </Box>
       ))}
     </Grid>
   );

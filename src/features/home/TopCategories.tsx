@@ -1,9 +1,9 @@
-"use clinet";
+"use client";
 import React from "react";
 import { ButtonComponent } from "@/app/components/ButtonComponent";
 import { SectionHeading } from "@/app/components/SectionHeading";
 import { TopCategoryCard } from "../home/TopCategoryCard";
-import { Box, Grid, GridItem } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 export const TopCategories = () => {
   return (
@@ -20,11 +20,7 @@ export const TopCategories = () => {
           color="black"
         />
       </Box>
-      <Grid>
-        <GridItem>
-          <TopCategoryCard />
-        </GridItem>
-      </Grid>
+      <TopCategoryCard />
     </Box>
   );
 };

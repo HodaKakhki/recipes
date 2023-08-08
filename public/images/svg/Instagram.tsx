@@ -1,10 +1,12 @@
 import { Box } from "@chakra-ui/react";
-
-export default function Instagram() {
+interface InstagramProps {
+  color?: string;
+}
+export default function Instagram({ color = "currentColor" }: InstagramProps) {
   return (
     <Box w="20px" h="20px">
       <svg
-        fill="current"
+        fill={color}
         stroke="current"
         xmlns="http://www.w3.org/2000/svg"
         height="1.5em"

@@ -1,17 +1,22 @@
 import React from "react";
 import { ButtonComponent } from "@/app/components/ButtonComponent";
-import { Input, InputGroup, InputRightElement, Flex } from "@chakra-ui/react";
-import { ButtonIcon } from "@/helpers/ButtonIcon";
+import { Input, InputGroup, InputRightElement } from "@chakra-ui/react";
 
 export const SubscribeBar = () => {
   return (
-    <InputGroup w="480px" h="5rem" borderRadius="24px" bg="white">
+    <InputGroup
+      w={{ base: "90%", sm: "70%", md: "60%", lg: "480px" }}
+      h="5rem"
+      borderRadius="24px"
+      bg="white"
+      mx="auto"
+    >
       <Input
+        pl="2rem"
         pr="2.5rem"
-        type="textInput"
+        type="text"
         placeholder="Your email address..."
         variant="unstyled"
-        pl="2rem"
       />
       <InputRightElement width="10rem" mt="20px">
         <ButtonComponent btnName="Subscribe" bgColor="black" color="white" />

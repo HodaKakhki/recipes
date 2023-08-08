@@ -1,18 +1,22 @@
 import { recipeButtonStyles } from "@/features/home/style";
-import { Box, Button, Text } from "@chakra-ui/react";
+import { Button, Text } from "@chakra-ui/react";
 import React from "react";
-interface Icons {
+
+interface ButtonIconProps {
   title: string;
-  Icon: React.JSX.Element;
-  color: string;
-  bgColor: string;
+  Icon: React.ReactNode;
+  color?: string;
 }
 
-export const ButtonIcon = ({ title, Icon, color, bgColor }: Icons) => {
+export const ButtonIcon: React.FC<ButtonIconProps> = ({
+  title,
+  Icon,
+  color,
+}) => {
   return (
-    <Button {...recipeButtonStyles} style={{ backgroundColor: bgColor }}>
-      <Text mr={"4"}>{title}</Text>
-      <Text style={{ fill: color }}>{Icon}</Text>
+    <Button {...recipeButtonStyles}>
+      <Text mr="4">{title}</Text>
+      {React.cloneElement(Icon as React.ReactElement, { fill: color })}
     </Button>
   );
 };
