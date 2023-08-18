@@ -4,6 +4,7 @@ import { TopCategories } from "@/features/home/TopCategories";
 import { FeaturedProducts } from "@/features/home/FeaturedProducts";
 import { Box } from "@chakra-ui/react";
 import { SectionText } from "@/app/components/SectionText";
+import { SectionTextLeft } from "@/app/components/SectionTextLeft";
 import { LearnMore } from "@/features/home/LearnMore";
 import Posts from "@/features/home/Posts";
 import { ButtonIcon } from "@/helpers/ButtonIcon";
@@ -44,6 +45,13 @@ export default function Home() {
           />
         </Box>
       </Box>
+
+      <SectionTextLeft
+        title={"Try this delicious recipe to make your day"}
+        paragraph={
+          "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim "
+        }
+      />
       <Categories />
       <SubscribeCard />
     </Box>

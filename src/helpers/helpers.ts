@@ -120,34 +120,42 @@ export const productItems: productItem[] = [
 ];
 export const categoriesItems: CategoriesItem[] = [
   {
+    id: 1,
     label: "Mixed Tropical Fruit Salad with Superfood Boosts ",
     image: "../images/mixedsalad.jpg",
   },
   {
+    id: 2,
     label: "Big and Juicy Wagyu Beef Cheeseburger",
     image: "../images/baked.png",
   },
   {
+    id: 3,
     label: "Healthy Japanese Fried Rice with Asparagus",
     image: "../images/eggs.png",
   },
   {
+    id: 4,
     label: "Cauliflower Walnut Vegetarian Taco Meat",
     image: "../images/pancake.png",
   },
   {
+    id: 5,
     label: "Rainbow Chicken Salad with Almond Honey Mustard Dressing",
     image: "../images/spageti.png",
   },
   {
+    id: 1,
     label: "Barbeque Spicy Sandwiches with Chips ",
     image: "../images/toast.png",
   },
   {
+    id: 6,
     label: "Firecracker Vegan Lettuce Wraps - Spicy! ",
     image: "../images/salad.png",
   },
   {
+    id: 7,
     label: "Chicken Ramen Soup with Mushroom ",
     image: "../images/soap.png",
   },

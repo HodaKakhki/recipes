@@ -13,34 +13,33 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 
 export const HeaderPost = () => {
   return (
-    <Box>
-      <CardHeader>
-        <Flex>
-          <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
-            <Avatar name="Oval" src="/images/Oval.png" size="25*25" />
-            <Box>
-              <Flex  alignItems="center">
-                <Heading fontSize="sm">Foodieland. </Heading>
-                <Image
-                  sizes="8*8"
-                  objectFit="cover"
-                  src="/images/OfficialIcon.png"
-                  alt="Chakra UI"
-                />
-              </Flex>
-              <Text fontSize="8px">Tokyo, Japan</Text>
-            </Box>
-          </Flex>
-          <IconButton
-            variant="ghost"
-            colorScheme="gray"
-            aria-label="See menu"
-            transform="rotate(90deg)"
-          >
-            <BsThreeDotsVertical />
-          </IconButton>
+    <CardHeader>
+      <Flex justify="space-between" align="center">
+        <Flex align="center">
+          <Avatar name="Oval" src="/images/Oval.png" />
+          <Box ml="2">
+            <Flex align="center">
+              <Heading fontSize="sm">Foodieland</Heading>
+              <Image
+                boxSize="12px"
+                objectFit="cover"
+                src="/images/OfficialIcon.png"
+                alt="Official Icon"
+                ml="1"
+              />
+            </Flex>
+            <Text fontSize="8px">Tokyo, Japan</Text>
+          </Box>
         </Flex>
-      </CardHeader>
-    </Box>
+        <IconButton
+          variant="ghost"
+          colorScheme="gray"
+          aria-label="See menu"
+          transform="rotate(90deg)"
+        >
+          <BsThreeDotsVertical />
+        </IconButton>
+      </Flex>
+    </CardHeader>
   );
 };

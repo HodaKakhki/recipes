@@ -19,6 +19,7 @@ export interface productItem {
 }
 
 export interface CategoriesItem {
+  id: number;
   label: string;
   image: string;
 }

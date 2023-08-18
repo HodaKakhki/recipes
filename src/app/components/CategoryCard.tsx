@@ -1,34 +1,27 @@
-import {
-  Box,
-  Button,
-  Heading,
-  Image,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
-interface CategoriesItem{
+interface CategoriesItem {
   label: string;
   image: string;
-
 }
-interface CategoriesCardProps{
+interface CategoriesCardProps {
   CategoriesItem: CategoriesItem;
 }
-export const CategoryCard:React.FC<CategoriesCardProps> = ({CategoriesItem}) => {
+export const CategoryCard: React.FC<CategoriesCardProps> = ({
+  CategoriesItem,
+}) => {
   return (
-
     <Box w="290px">
       <Image
-         src={CategoriesItem.image}
+        src={CategoriesItem.image}
         alt="productcard"
         borderRadius="20"
         boxShadow={"md"}
-         mb={"1rem"}
+        mb={"1rem"}
       />
       <Stack>
         <Heading fontSize="18px" mb="1.5rem" lineHeight="6">
-         {CategoriesItem.label}
+          {CategoriesItem.label}
         </Heading>
         <Stack flexDirection={{ base: "row", lg: "row" }}>
           <Button
